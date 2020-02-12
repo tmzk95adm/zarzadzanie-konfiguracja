@@ -1,9 +1,61 @@
 body {
     font-family: 'Roboto Condensed';
     background-color: #2ba;
+    margin: 0;
 }
 
 header {
+    display: flex;
+    align-items: center;
+    padding: 10px;
     background-color: black;
     color: white;
+}
+
+.logo {
+    font-size: 20px;
+    font-weight: 700;
+    margin-right: 30px;
+    margin-left: 20px;
+}
+
+.logo-description {
+    font-size: 13px;
+    margin-right: 120px;
+    text-transform: uppercase;
+}
+
+.header-link {
+    font-size: 13px;
+    font-weight: 700;
+    margin-right: 20px;
+    text-transform: uppercase;
+}
+
+.header-link:hover {
+    cursor: pointer;
+}
+
+.underline {
+    position: relative;
+}
+
+.underline::after {
+    content: "";
+    position: absolute;
+}
+
+.header-link .underline::after {
+    top: 100%;
+    height: 2px;
+    width: 0%;
+    left: 50%;
+    background-color: rgba(255, 255, 255, 0.7);
+    transition: 0.2s ease all .2s;
+}
+  
+.header-link:hover .underline::after {
+    width: 80%;
+    left: 10%;
+    transition: 0.2s ease all;
 }
