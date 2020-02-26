@@ -64,3 +64,8 @@ header {
     left: 10%;
     transition: 0.2s ease all;
 }
+
+.info-container {
+    background-color: #4dc;
+    padding: 30px;
+}
